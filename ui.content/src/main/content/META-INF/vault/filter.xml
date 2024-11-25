@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/Bhasaka-Ecomm" mode="merge"/>
+    <filter root="/content/Bhasaka-Ecomm" mode="merge"/>
+    <filter root="/content/dam/Bhasaka-Ecomm" mode="merge">
+        <exclude pattern="/content/dam/Bhasaka-Ecomm(/.*)?"/>
+        <include pattern="/content/dam/Bhasaka-Ecomm/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/Bhasaka-Ecomm/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/Bhasaka-Ecomm" mode="merge"/>
+</workspaceFilter>
