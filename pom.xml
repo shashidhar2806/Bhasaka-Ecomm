@@ -140,25 +140,10 @@
     
     
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-                    
-    
-    
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-                    
-    
-    
     <aem.sdk.api>2024.3.15575.20240318T214814Z-231200</aem.sdk.api>
-                    
-    
-    
     <aemanalyser.version>1.4.10</aemanalyser.version>
-                    
-    
-    
     <componentGroupName>Bhasaka-Ecomm</componentGroupName>
-                
-  
-  
   </properties>
           
   
