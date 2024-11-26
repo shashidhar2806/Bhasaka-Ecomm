@@ -1,0 +1,8 @@
+#base=js
+
+bootstrap.bundle.js
+bootstrap.bundle.min.js
+bootstrap.esm.js
+bootstrap.esm.min.js
+bootstrap.js
+bootstrap.min.js
