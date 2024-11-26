@@ -16,4 +16,4 @@ bootstrap-utilities.css
 bootstrap-utilities.min.css
 bootstrap-utilities.rtl.css
 bootstrap-utilities.rtl.min.css
-style.css
+Theme-Template.css
