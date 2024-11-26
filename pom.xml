@@ -147,7 +147,7 @@
                     
     
     
-    <aem.sdk.api>2024.11.18598.20241113T125352Z-241100</aem.sdk.api>
+    <aem.sdk.api>2024.3.15575.20240318T214814Z-231200</aem.sdk.api>
                     
     
     
@@ -622,8 +622,6 @@
                 <bnd><![CDATA[
 Bundle-Category: ${componentGroupName}
 
-# export all versioned packages except for conditional ones (https://github.com/bndtools/bnd/issues/3721#issuecomment-579026778)
--exportcontents: ${removeall;${packages;VERSIONED};${packages;CONDITIONAL}}
 
 # reproducible builds (https://github.com/bndtools/bnd/issues/3521)
 -noextraheaders: true
@@ -649,8 +647,8 @@ Bundle-DocURL:
           
           
           <dependencies>
-                                                            
-            
+
+
             
             <dependency>
                                                                       
@@ -1081,17 +1079,8 @@ Bundle-DocURL:
           
           
           <groupId>com.adobe.aem</groupId>
-                                                  
-          
-          
           <artifactId>aemanalyser-maven-plugin</artifactId>
-                                                  
-          
-          
           <version>${aemanalyser.version}</version>
-                                                  
-          
-          
           <extensions>true</extensions>
                                               
         
@@ -1904,29 +1893,11 @@ Bundle-DocURL:
     
     
     <dependencies>
-                              
-      
-      
       <dependency>
-                                        
-        
-        
         <groupId>com.adobe.aem</groupId>
-                                        
-        
-        
         <artifactId>aem-sdk-api</artifactId>
-                                        
-        
-        
         <version>${aem.sdk.api}</version>
-                                        
-        
-        
         <scope>provided</scope>
-                                    
-      
-      
       </dependency>
                               
       
