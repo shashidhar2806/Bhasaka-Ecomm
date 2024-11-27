@@ -88,6 +88,7 @@ Import-Package: javax.annotation;version=0.0.0,*
             <version>6.5.15</version> <!-- Match your AEM version -->
             <scope>provided</scope>
         </dependency>
+
         <dependency>
             <groupId>uk.org.lidalia</groupId>
             <artifactId>slf4j-test</artifactId>
