@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/Bhasaka-Ecomm",
+        "create path (nt:unstructured) /content/dam/Bhasaka-Ecomm/jcr:content",
+        "set properties on /content/dam/Bhasaka-Ecomm/jcr:content\n  set cq:conf{String} to /conf/Bhasaka-Ecomm\n  set jcr:title{String} to \"Bhasaka-Ecomm\"\nend"
+    ]
+}
