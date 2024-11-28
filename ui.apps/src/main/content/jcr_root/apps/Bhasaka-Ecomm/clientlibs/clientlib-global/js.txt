@@ -1,9 +1,8 @@
 #base=js
 
-jquery-3.4.1.js
+bootstrap.bundle.js
 bootstrap.bundle.min.js
-easing.js
-owl.carousel.js
-jqBootstrapValidation.js
-contact.js
-main.js
+bootstrap.esm.js
+bootstrap.esm.min.js
+bootstrap.js
+bootstrap.min.js
