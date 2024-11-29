@@ -1,5 +1,7 @@
 #base=css
 
 all.css
-bootstrap.css
+bootstrap.min.css
+animate.min.css
+owl.carousel.css
 Theme-Template.css
