@@ -81,19 +81,28 @@ Import-Package: javax.annotation;version=0.0.0,*
     </build>
 
     <dependencies>
-<!--        added additional dependency-->
-        <dependency>
-            <groupId>com.adobe.aem</groupId>
-            <artifactId>uber-jar</artifactId>
-            <version>6.5.15</version> <!-- Match your AEM version -->
-            <scope>provided</scope>
-        </dependency>
 
         <dependency>
             <groupId>uk.org.lidalia</groupId>
             <artifactId>slf4j-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!--        added additional dependency-->
+        <!--<dependency>
+            <groupId>xerces</groupId>
+            <artifactId>xercesImpl</artifactId>
+            <version>2.12.2</version> &lt;!&ndash; Latest stable version &ndash;&gt;
+        </dependency>-->
+
+
+       <!-- <dependency>
+            <groupId>com.adobe.aem</groupId>
+            <artifactId>uber-jar</artifactId>
+            <version>6.5.20</version> &lt;!&ndash; Match your AEM version &ndash;&gt;
+&lt;!&ndash;        <scope>provided</scope>&ndash;&gt;
+        </dependency>
+-->
         <dependency>
             <groupId>com.adobe.aem</groupId>
             <artifactId>aem-sdk-api</artifactId>
@@ -129,6 +138,7 @@ Import-Package: javax.annotation;version=0.0.0,*
         <dependency>
             <groupId>io.wcm</groupId>
             <artifactId>io.wcm.testing.aem-mock.junit5</artifactId>
+            <version>4.1.0</version>
             <scope>test</scope>
         </dependency>
         <dependency>
