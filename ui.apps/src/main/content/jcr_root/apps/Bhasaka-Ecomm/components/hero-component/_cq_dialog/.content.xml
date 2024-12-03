@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Hero Component Details"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items jcr:primaryType="nt:unstructured">
+                    <tab1
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Carousel Items Details "
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+
+                            <header-carousel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Header Carousel Items">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./headerCarouselItems">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <contactGroup
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/well">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <item-title
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Header Carousel Item Title"
+                                                    name="./itemTitle"/>
+                                                <item-description
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                    fieldLabel="Header Carousel Item Description"
+                                                    name="./itemDescription"/>
+                                                <item-link
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldLabel="Select a page link to navigate"
+                                                    name="./itemLink"
+                                                    rootPath="/content/Bhasaka-Ecomm/us/en"/>      
+                                                <item-image
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    rootPath="/content/dam/newsportal/images"
+                                                    fieldLabel="Item Image"
+                                                    name="./imagePath"/>
+                                                                                     
+                                            </items>
+                                        </contactGroup>
+                                    </items>
+                                </field>
+                            </header-carousel>
+                        </items>
+                    </tab1>
+                    <tab2
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Product Offer"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+
+                            <product-offer
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Product Offers">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./productOffers">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <contactGroup
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/well">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <product-discount
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Product Discount"
+                                                    name="./productDiscount"/>
+                                                
+                                                <discount-type
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Discount Type"
+                                                    name="./discountType"/>
+                                                
+                                                <offer-link
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    rootPath="/content/Bhasaka-Ecomm/us/en"
+                                                    fieldLabel="Offer Link"
+                                                    name="./offerLink"/>
+
+                                                <offer-image
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    rootPath="/content/dam/newsportal/images"
+                                                    fieldLabel="Offer Image Path"
+                                                    name="./imagePath"/>
+        
+                                            </items>
+                                        </contactGroup>
+                                    </items>
+                                </field>
+                            </product-offer>
+                           
+                        </items>
+                    </tab2>
+                </items>
+            </tabs>
+ 
+        </items>
+    </content>
+</jcr:root>
