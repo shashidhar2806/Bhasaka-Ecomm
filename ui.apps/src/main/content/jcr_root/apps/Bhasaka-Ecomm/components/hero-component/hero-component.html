@@ -1,0 +1,48 @@
+<!-- Carousel Start -->
+<sly data-sly-use.heroComponent="com.bhasaka.ecomm.core.models.HeroComponentModel"></sly>
+<div class="container-fluid mb-3">
+  <div class="row px-xl-5">
+      <div class="col-lg-8">
+          <div id="header-carousel" class="carousel slide carousel-fade mb-30 mb-lg-0" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <sly data-sly-list.carouselItems = "${heroComponent.headerCarouselItemsList}">
+                  <li data-target="#header-carousel" data-slide-to="${carouselItemsList.index}" class="${carouselItemsList.index==0?'active':''}"></li>
+                </sly>
+              </ol>
+              <div class="carousel-inner">
+                <!-- dynamiclly added carousel items  -->
+                
+                    <sly data-sly-list.carouselItems = "${heroComponent.headerCarouselItemsList}">
+                        
+                        <div class="${carouselItemsList.index == 0 ? 'carousel-item position-relative active' : 'carousel-item position-relative'}" style="height: 430px;">
+                            <img class="position-absolute w-100 h-100" src="${carouselItems.imagePath}" style="object-fit: cover;">
+                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                <div class="p-3" style="max-width: 700px;">
+                                    <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">${carouselItems.title}</h1>
+                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn">${carouselItems.description}</p>
+                                    <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="${carouselItems.link @ extension='html'}">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </sly>     
+
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-4">
+        <sly data-sly-list.productOffer = "${heroComponent.productOffersList}">
+          <div class="product-offer mb-30" style="height: 200px;">
+              <img class="img-fluid" src="${productOffer.imagePath}" alt="">
+              <div class="offer-text">
+                  <h6 class="text-white text-uppercase">${productOffer.discount}</h6>
+                  <h3 class="text-white mb-3">${productOffer.discountType}</h3>
+                  <a href="${productOffer.link @ extension='html'}" class="btn btn-pink">Shop Now</a>
+              </div>
+          </div>
+        </sly>
+      </div>
+  </div>
+</div>
+</sly>  
+<!-- Carousel End -->
